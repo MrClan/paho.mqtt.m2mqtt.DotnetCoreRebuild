@@ -13,11 +13,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Certificates\ca.pem" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Certificates\ca.pem" />
+    <Compile Remove="Certificates\**" />
+    <EmbeddedResource Remove="Certificates\**" />
+    <None Remove="Certificates\**" />
   </ItemGroup>
 
   <ItemGroup>
